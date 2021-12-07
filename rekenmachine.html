@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            color:yellow;
+            background-color: saddlebrown;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <span>Waarde 1</span>
+    <input type="number" value="" id="nummer1">
+    <span>Waarde 2</span>
+    <input type="number" value="" id="nummer2">
+    <br>
+    <button onclick="telop()">Optellen</button>
+     <button onclick="aftrekken()">Aftrekken</button>
+     <button onclick="vermenigvuldigen()">Vermenigvuldigen</button>
+    <button onclick="delen()">Delen</button>
+   
+    <br>
+    <br>
+    <span id="antwoord"></span>
+</body>
+
+<script>
+    
+    function telop(){
+        var nummer1 = parseInt(document.getElementById('nummer1').value);
+    var nummer2 = parseInt(document.getElementById('nummer2').value);
+    var antwoord = nummer1 + nummer2;
+        document.getElementById('antwoord').innerText = 'Het antwoord is: ' + antwoord;
+
+    }
+     
+    function vermenigvuldigen(){
+        var nummer1 = parseInt(document.getElementById('nummer1').value);
+    var nummer2 = parseInt(document.getElementById('nummer2').value);
+    var antwoord = nummer1 * nummer2;
+        document.getElementById('antwoord').innerText = 'Het antwoord is:' + antwoord;
+
+    }
+    function delen(){
+        var nummer1 = parseInt(document.getElementById('nummer1').value);
+    var nummer2 = parseInt(document.getElementById('nummer2').value);
+    var antwoord = nummer1 / nummer2;
+        document.getElementById('antwoord').innerText = 'Het antwoord is:' + antwoord;
+
+    }
+    function aftrekken(){
+        var nummer1 = parseInt(document.getElementById('nummer1').value);
+    var nummer2 = parseInt(document.getElementById('nummer2').value);
+    var antwoord = nummer1 - nummer2;
+        document.getElementById('antwoord').innerText = 'Het antwoord is:' + antwoord;
+
+    }
+</script>
+</html>

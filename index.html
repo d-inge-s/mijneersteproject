@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mijnstijl.css">
+    
+</head>
+<body>
+    <button onmouseenter="alert('Klik hier')" onclick="alert('Het werkt')">
+        Klik op mij
+    </button>
+    <a href="tweede.html">
+        Dit is mijn eerste link.
+    </a>
+
+    <a href="http://www.w3schools.com" target="_blank">
+        Ga naar W3.
+    </a>
+    <ul id="eenlijst">
+        <li>Tekst 1</li>
+        <li>Tekst 2</li>
+        <li>Tekst 3</li>
+    </ul>
+
+    <ol>
+        <li class="mijnclass1 mijnclass2">Tekst 1</li>
+        <li class="mijnclass1">Tekst 2</li>
+        <li>Tekst 3</li>
+    </ol>
+
+    <span style="color: deeppink; font-size:60px;">
+        Dit is mijn eerste tekst.
+    </span>
+
+    <span id="tweedetekst">
+        Dit is mijn tweede tekst.
+    </span>
+
+    <p>
+        Dit is mijn eerste paragraaf.
+    </p>
+
+    <img src="https://images0.persgroep.net/rcs/PfYbPLq3sL3w1jiXYslmaeCVPU0/diocontent/167449860/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.8">
+    
+    <table>
+                <tr>
+            <td>
+                Kolom 1
+            </td>
+            <td>
+                Kolom 2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Kolom 3
+            </td>
+            <td>
+                Kolom 4
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Kolom 1</th>
+                <th>Kolom 2</th>
+            </tr>
+        </thead>
+        <tbody id="tabelbody">
+            <tr>
+                <td>Rij 1 - Kolom 1</td>
+                <td>Rij 1 - Kolom 2</td>
+            </tr>
+            <tr>
+                <td>Rij 2 - Kolom 1</td>
+                <td>Rij 2 - Kolom 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Dit is de footer</td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+<script>
+    console.log("het start")
+    var staataan = false;
+    var leeftijd = 23;
+    console.log(staataan);
+    console.log(leeftijd);
+    var eenlijst = document.getElementById('eenlijst');
+    eenlijst.style.color = "cyan";
+    eenlijst.style.backgroundColor = "yellow";
+    
+    //var tabelbody = document.getElementById('tabelbody');
+    //tabelbody.style.backgroundColor = "magenta";
+
+    function tabelkleurVeranderen ()
+        {
+        document.getElementById('tabelbody').style.backgroundColor = "grey";
+        }
+    tabelkleurVeranderen();
+
+    function vraagNaam (vraag1, vraag2)
+    {
+        console.log('De eerste vraag is:', vraag1)
+        console.log('De tweede vraag is:', vraag2)
+    }
+    vraagNaam('Wat is jouw naam?', 'Welke koffie vind je lekker?')
+
+    function telOp (num1, num2){
+        console.log('Het antwoord is', num1 + num2);
+    }
+    telOp(2,5);
+
+</script>
+</html>
